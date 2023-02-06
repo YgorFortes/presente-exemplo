@@ -43,8 +43,6 @@ body {
 
 .principal {
     padding: 8rem;
-    
-    
 }
 
 .principal__apresentacao {
@@ -64,6 +62,7 @@ body {
     font-family: var(--tamanho-fonte-titulo);
     color: var(--cor-fonte-texto);
 }
+
 .principal__carta {
     margin: 5rem 0;
 }
@@ -81,6 +80,7 @@ body {
 .principal__album__titulo {
     text-align: center;
 }
+
 .principal__album {
     display: flex;
     flex-wrap: wrap;
