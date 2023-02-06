@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #f4f4f4;
+    --cor-secundaria: #ff9e9e;
+    --cor-fonte-texto: #ff9e9e;
+    --cor-fonte-cabecalho: #c4eae2;
+
+    --fonte-titulo: 'Krona One', sans-serif;
+    --fonte-texto: 'Montserrat', sans-serif;
+
+    --tamanho-fonte-texto: 1.3rem;
+    --tamanho-fonte-titulo: 2.85rem;
+}
+
+body {
+    background-color: var(--cor-primaria);
+
+    /*A propriedade abaixo faz que os containers não utrapassam o tamanho do container principal*/
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    background: var(--cor-secundaria);
+   padding: 2% 0% 2% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    color: var(--cor-fonte-cabecalho);
+    font-size: var(--tamanho-fonte-texto);
+}
+
+.principal {
+    padding: 8rem;
+    
+    
+}
+
+.principal__apresentacao {
+    text-align: center;
+    display: flex;
+    gap: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.apresentacao__imagem{
+    width: 25%;
+}
+
+.principal__apresentacao__titulo, .principal__carta__titulo, .principal__album__titulo {
+    font-size: var(--tamanho-fonte-titulo);
+    font-family: var(--tamanho-fonte-titulo);
+    color: var(--cor-fonte-texto);
+}
+.principal__carta {
+    margin: 5rem 0;
+}
+
+.principal__carta__titulo{
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.principal__carta__texto {
+    color: var(--cor-fonte-texto);
+    font-size: var(--tamanho-fonte-texto);
+    text-align: center;
+}
+.principal__album__titulo {
+    text-align: center;
+}
+.principal__album {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: space-between;
+    margin: 5rem 0;
+}
+
+.principal__fotos__foto{
+    width: 25%;
+}
+
+.rodape {
+    background: var(--cor-secundaria);
+    padding: 2%;
+    text-align: center;
+}
+
+.rodape__texto {
+    color: var(--cor-fonte-cabecalho);
+    margin: 0.50rem;
+    font-size: var(--tamanho-fonte-texto);
+}
+
+@media (max-width: 1200px) {
+
+    .cabecalho{
+        display: flex;
+        justify-content: center;
+    }
+
+    .principal {
+        box-sizing: border-box;
+        width: auto;
+    }
+
+    .principal__apresentacao {
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .apresentacao__imagem {
+        width: 100%;
+    }
+
+    .principal__album {
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+    }
+
+    .principal__fotos__foto {
+        width: 100%;
+    }
+    
+}
+
+
+
